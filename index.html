@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Vin Tyagi</title>
+	<base href="/src">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/d0b32d5744.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<header class='header'>
+		<div class="nav">
+			<p class="nav-option" id="about" onclick="getTo('#bio')">Who I am</p>
+			<p class="nav-option" id="experience" onclick="getTo('#exp')">What I do</p>
+			<p class="nav-option" id="proj" onclick="getTo('#projects')">Projects</p>
+		</div>
+		<div class='socials'>
+			<a href='https://www.github.com/VinSTyagi/'>
+				<i class='fa-brands fa-square-github social-icon' id='github' size="3x"></i>
+			</a>
+			<a href="https://www.instagram.com/vin_tyagi/">
+				<i class='fa-brands fa-square-instagram social-icon' id='instagram' style="width: 50%"></i>
+			</a>
+			<a href='https://www.linkedin.com/in/vin-tyagi/'>
+				<i class='fa-brands fa-square-linkedin social-icon' id='linkedin' size="3x"></i>
+			</a>
+			<a download="Vin Tyagi SWE Resume.pdf" href='assets/Vin_Tyagi_Resume.pdf'>
+				<i class='fa-solid fa-square-caret-down social-icon' id='resume' size="3x"></i>
+			</a>
+		</div>
+	</header>
+	<div class="big-section">
+		<div class='title-container' id="bio">
+			<h1>Vinamra Tyagi</h1>
+		</div>
+		<div class='wrapper bio-wrapper'>
+			<div class="blurb-text text-box">
+				<h2>About me</h2>
+				<p>A data-savvy jack of all trades.</p>
+				<p>Technical acumen and professional experience delivering full-stack software features, data-driven
+					business
+					insights,
+					as well as AI-motivated pipelines that serve end-consumers.</p>
+				<p>I'm Vinamra Tyagi (occasionally Vin), and I could be your next SWE.</p>
+				<p>Or Data Scientist. Or MLE. Or DevOps Engineer. Take your pick :)</p>
+			</div>
+		</div>
+		<div class='wrapper ed-wrapper'>
+			<div class="ed-text text-box">
+				<h2>Education</h2>
+				<div class="ed-detail">
+					<p>Dual B.S. in Computer Science and Mathematics</p>
+					<p>Recipient of the Chancellor's Award</p>
+					<p>Accelerated Master's in Computer Science</p>
+					<p>Recipient of the Bay State Scholarship</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="big-section">
+		<div class='title-container' id="exp">
+			<h1>My work</h1>
+		</div>
+		<div class="exp-wrapper wrapper">
+			<div class="exp-text-item">
+				<h2>Summer 2025 - Data Intern</h2>
+				<h2>Kalderos</h2>
+				<ul>
+					<li>Built a Python-based text classification tool (Pandas, scikit-learn, imbalanced-learn, LightGBM)
+						to
+						categorize [Under NDA],
+						cutting manual binning effort by roughly 87% while ensuring consistency in prediction
+					</li>
+					<li>Optimized prediction uploads to Snowflake by 45%, balancing data ingestion and memory allocation
+					</li>
+					<li>Workedcross-functionally with product consumers to validate model results and analyze
+						consistency in
+						prediction strategy
+					</li>
+					<li>Engineered the project into production workflow, ensuring continuous ingestion of fresh
+						production data and
+						upload of
+						predictions into storage(Snowflake, Git, Azure Blob Storage)
+					</li>
+				</ul>
+			</div>
+			<div class="exp-text-item">
+				<h2>Fall 2024, Winter 2025 - Undergraduate Research Assistant</h2>
+				<h2>SOLAR Labs</h2>
+				<ul>
+					<li>Collaborated with Professor Hajiesmaili and graduate students to pioneer novel approaches in
+						improving video
+						content
+						delivery systems.
+					</li>
+					<li>Designed pre-fetching algorithm models for short video platforms, to enhance QoE for users</li>
+					<li>Designed a BFS search to MDP translation in order to guarantee optimality of a solution</li>
+				</ul>
+			</div>
+			<div class="exp-text-item">
+				<h2>Summer 2024 - Technology Intern</h2>
+				<h2>DataScan</h2>
+				<ul>
+					<li>Worked cross-functionally with data analytics teams to spearhead stress test functionality for
+						RiskGauge,
+						allowing test
+						volumes of up to 130% of production data
+					</li>
+					<li>Developed features using full-stack development (Java, .NET, Angular), delivering key
+						client-requested
+						features to the
+						RiskGauge application and producing clean, efficient, and well-tested code
+					</li>
+					<li>Developed test suites and created a dynamic logging schedule through scripting within CI/CD
+						infrastructure
+						(YAML, Bash,
+						GitLab) to ensure robust and scalable deployment pipelines
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="big-section">
+		<div class="title-container" id="projects">
+			<h1>Projects</h1>
+		</div>
+		<div class='wrapper skills-wrapper'>
+			<div class="skills-text text-box">
+				<h2>Skillset</h2>
+				<p>Having a varied set of experiences and skills, I never shy away from a challenge. Take a look at some
+					of my proficiencies below:</p>
+			</div>
+			<div class="skills-icons-wrapper">
+			</div>
+		</div>
+		<div class="proj-wrapper wrapper">
+			<div class="proj-text text-box">
+				<h2>Projects</h2>
+				<p>Apart from professional experience, I love applying myself technically as well.
+					Whether it's hackathons, following tech through social media, articles, or research,
+					or a personal project, I love to build and improve!</p>
+			</div>
+			<div class="proj-item-wrapper">
+			</div>
+		</div>
+	</div>
+	<script src="./index.js"></script>
+</body>
+
+</html>

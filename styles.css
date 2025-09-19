@@ -1,0 +1,529 @@
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'main-font';
+	src: url('fonts/static/Manrope-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'alt-font';
+	src: url('fonts/Epunda_Slab/static/EpundaSlab-BoldItalic.ttf') format('truetype');
+	/* src: url('assets/fonts/static/Manrope-Regular.ttf') format('truetype'); */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'alt-font-bold';
+	src: url('fonts/Epunda_Slab/static/EpundaSlab-ExtraBold.ttf') format('truetype');
+	/* src: url('assets/fonts/static/Manrope-Regular.ttf') format('truetype'); */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'main-font-bold';
+	/* src: url('assets/fonts/Epunda_Slab/static/EpundaSlab-Bold.ttf') format('truetype'); */
+	src: url('fonts/static/Manrope-ExtraBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'second-font';
+	src: url('fonts/Nerko_One/NerkoOne-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'wave-font';
+	src: url('fonts/Wavefont/Wavefont-VariableFont_ROND,YELA,wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--main-color: #FF9B51FF;
+	--second-color: #c46791;
+	--third-color: #4c587e;
+	--final-color: #00807e;
+	--github-color: #4423a4;
+	--linkedin-color: #0A66C2;
+	--instagram-color: #ff1856;
+	--download-color: #068a00;
+	--main-font: 'main-font', Times, serif;
+	--main-font-bold: 'main-font-bold', Times, serif;
+	--second-font: 'second-font', Times, serif;
+	--wave-font: 'wave-font', Times, serif;
+	background: black;
+
+	.title-container {
+		background-image: url("images/IMG_4382.JPG");
+		padding-top: 70vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: fit-content;
+		filter: grayscale(100%);
+		transition: 0.2s linear;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 3vh;
+	}
+
+	font-family: 'main-font';
+
+	.title-container>h1 {
+		margin: 0;
+		font-family: 'alt-font-bold';
+		font-size: 5vw;
+		border: 0.5vh black solid;
+		background: rgba(255, 255, 255);
+		box-shadow: 1vh 1vh 0px rgba(0, 0, 0, 0.7);
+		width: fit-content;
+		border-top-right-radius: 2vh;
+		border-top-left-radius: 2vh;
+		padding-left: 1vh;
+		padding-right: 1vh;
+		transition: 0.2s linear;
+	}
+
+	.title-container:hover {
+		filter: grayscale(0%);
+	}
+
+	.big-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	#projects {
+		background-image: url("images/IMG_7940~2.jpg");
+	}
+
+	#exp {
+		background-image: url("images/EFFECTS.jpg");
+	}
+
+	.bio-wrapper {
+		background-image: url("images/alt_pfp.jpg");
+	}
+
+	.ed-wrapper {
+		background-image: url("images/f24_umaf_wide.jpg");
+	}
+}
+
+
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	justify-self: anchor-center;
+	height: fit-content;
+	width: 60vw;
+	background: white;
+	border-radius: 2.5vh;
+	border: 0.5vh solid black;
+	box-shadow: 2vh 2vh 0px rgba(0, 0, 0, 0.6);
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 10%;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	font-family: main-font-bold, sans-serif;
+	font-weight: bolder;
+	font-size: 2vw;
+	color: black;
+}
+
+.nav-option {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#about::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1vh;
+	border-radius: 1vw;
+	background-color: var(--main-color);
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+#about:hover::after,
+#about:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 1vh, 0);
+}
+
+
+#experience::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1vh;
+	border-radius: 1vw;
+	background-color: var(--second-color);
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+#experience:hover::after,
+#experience:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 1vh, 0);
+}
+
+#proj::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1vh;
+	border-radius: 1vw;
+	background-color: var(--third-color);
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+#proj:hover::after,
+#proj:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 1vh, 0);
+}
+
+.socials {
+	align-items: center;
+	padding-top: 2vh;
+	justify-content: space-evenly;
+	display: flex;
+	border-radius: 2vh;
+	padding-bottom: 2vh;
+}
+
+.socials>a {
+	margin: 0 2vh 2vh 2vh;
+}
+
+.ng-fa-icon {
+	font-size: 2vh;
+}
+
+
+.social-icon {
+	transition: 0.2s;
+	color: black;
+}
+
+.social-icon:hover {
+	color: var(--github-color);
+}
+
+#instagram:hover {
+	color: var(--instagram-color);
+}
+
+#linkedin:hover {
+	color: var(--linkedin-color);
+}
+
+#resume:hover {
+	color: var(--download-color);
+}
+
+
+
+.title-container:hover>h1 {
+	border-color: var(--main-color);
+}
+
+.wrapper {
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 50vw;
+	height: 50%;
+	filter: grayscale(100%);
+	transition: 0.5s linear;
+	display: flex;
+	align-items: center;
+	margin-bottom: 3vh;
+}
+
+
+.overview-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.text-box {
+	transition: 0.5s linear;
+	width: 40vw;
+	font-size: calc(1.5vh + 1vw);
+	border-radius: 2vh;
+	border: 0.5vh solid black;
+	padding: 1vw;
+
+	p {
+		transition: 0.5s linear;
+		visibility: hidden;
+		color: black;
+	}
+}
+
+i {
+	font-size: 3vw;
+}
+
+h2 {
+	margin-top: -1vh;
+	color: white;
+	transition: 0.5s linear;
+	font-size: calc(1.5vh + 1.25vw);
+}
+
+p {
+	transition: 0.5s linear;
+}
+
+.wrapper:hover {
+	filter: grayscale(0%);
+
+	h2 {
+		color: var(--main-color);
+	}
+
+	.text-box {
+		border-color: var(--main-color);
+
+		p {
+			visibility: visible;
+			color: white;
+		}
+	}
+}
+
+
+.ed-wrapper {
+	background-position: left center;
+	/*display: flex;*/
+	/*align-items: center;*/
+	justify-content: end;
+	margin-bottom: 3vh;
+}
+
+.ed-text {
+	text-align: end;
+}
+
+
+
+#exp:hover>h1 {
+	border-color: var(--second-color);
+}
+
+.exp-wrapper {
+	background: black;
+	height: fit-content;
+	display: block;
+}
+
+.exp-wrapper:hover {
+	h2 {
+		color: var(--second-color);
+	}
+}
+
+.exp-text-item {
+
+	transition: 0.5s linear;
+	border: 0.5vh black solid;
+	border-radius: 2vh;
+	padding: 1%;
+	margin-bottom: 3vh;
+
+	ul {
+		height: 35vh;
+
+		li {
+			font-size: calc(1.5vh + 1vw);
+			transition: 0.5s linear;
+		}
+	}
+}
+
+.exp-text-item:hover {
+	border-color: var(--second-color);
+
+	li {
+		color: white;
+	}
+}
+
+
+
+#projects:hover>h1 {
+	border-color: var(--third-color);
+}
+
+.skills-wrapper,
+.proj-wrapper {
+	background: none;
+	display: block;
+	width: 100%;
+}
+
+.skills-wrapper:hover,
+.proj-wrapper:hover {
+	h2 {
+		color: var(--third-color);
+	}
+
+	.icon-wrapper {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.proj-item-wrapper {
+		opacity: 1;
+	}
+
+
+	.text-box {
+		border-color: var(--third-color);
+	}
+}
+
+.icon-wrapper>img {
+	width: 2vw;
+}
+
+.skills-text,
+.proj-text {
+	width: 95vw;
+	justify-self: center;
+}
+
+.proj-text {
+	text-align: end;
+	margin-bottom: 1vh;
+}
+
+.skills-overview {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	width: 100%;
+	justify-self: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.skills-icons-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.icon-wrapper {
+	width: auto;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2vw;
+	padding: 2vw;
+	border-radius: 2vh;
+	background: white;
+	border: 1vh black solid;
+	box-shadow: 1vh 1vh 0px grey;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
+
+	img {
+		width: 5vw;
+	}
+}
+
+.icon-wrapper:hover {
+	transform: rotateY(360deg);
+	border-color: var(--third-color);
+}
+
+.proj-wrapper {
+	text-align: center;
+}
+
+@keyframes upDown {
+
+	0%,
+	100% {
+		transform: translateY(0) scale(1);
+	}
+
+	50% {
+		transform: translateY(-10%) scale(1.1);
+		box-shadow: 20px 25px 10px black;
+	}
+}
+
+.proj-item-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	opacity: 0;
+	transition: 0.5s linear;
+}
+
+.info-summary-link {
+	height: 40vh;
+	width: 25vw;
+	font-size: calc(1.5vh + 1vw);
+	background: white;
+	border-radius: 2vh;
+	border: 0.5vh solid black;
+	padding: 1%;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s linear;
+	margin-bottom: 1vh;
+}
+
+
+.info-summary-link:hover {
+	font-family: 'main-font-bold';
+	animation: 'upDown' 1s;
+	/* border-color: white; */
+	background-color: var(--third-color);
+	color: white;
+}
+
+/* You can add global styles to this file, and also import other style files */
+/*@import "tailwindcss";*/
