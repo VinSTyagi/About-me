@@ -63,7 +63,7 @@ html {
 	background: black;
 
 	.title-container {
-		background-image: url("/images/IMG_4382.JPG");
+		background-image: url("images/IMG_4382.JPG");
 		padding-top: 70vh;
 		display: flex;
 		align-items: center;
